@@ -11,7 +11,7 @@ import speech_recognition as sr
 from pydub import AudioSegment
 
 
-def send_mail(addr_from, addr_form_pass, addr_to, mess='|_|_|_|_| - spikes', subject='( 0 )( 0 ) - eyes'):
+def send_mail(addr_from, addr_form_pass, addr_to, mess='|_|_|_| - spikes', subject='( 0 )( 0 ) - eyes'):
 	server = smtplib.SMTP('smtp.mail.ru', 25)
 	server.ehlo()       
 	server.starttls()
