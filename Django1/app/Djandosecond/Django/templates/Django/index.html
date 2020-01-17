@@ -1,18 +1,21 @@
 {% extends 'Django/base_django.html' %}
 
 
-
 {% block title %}
-    Post list
+Post list
 
 {% endblock %}
 
 
 {% block content %}
-    <h1 class="md-5">Post:</h1>
-    <li>
-        <button type="button" class="btn btn-primary"  href="{% url 'result_list_url' %}" >Resultat</button>
-    </li>
+<h1 class="md-5">Post:</h1>
+<div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<li>
+    <button type="button" class="btn btn-primary" href="{% url 'result_list_url' %}">Resultat</button>
+</li>
 
 {% endblock %}
 
